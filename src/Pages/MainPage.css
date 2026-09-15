@@ -81,3 +81,8 @@ nav a {
 header p {
   margin-top: 0;
 }
+
+main {
+  background-color: #f5f5f5;
+  padding: 20px;
+}

@@ -2,6 +2,7 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from './assets/vite.svg'
 // import heroImg from './assets/hero.png'
+import React from 'react'
 import MainPage from './Pages/MainPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Mainlayout from './Components/layout/Mainlayout';
@@ -17,13 +18,14 @@ function App() { //parent component
     {/* <Header/>  */}
     {/* <Mainlayout> */}
     <Routes>
-      {/* <Route element={<Mainlayout/>}>   */}
-      <Route path="/" element={<MainPage/>} /> 
-      <Route index element={<Mainlayout/>} />
+      <Route element={<Mainlayout/>}>  
+      <Route index element={<MainPage/>} /> 
+      {/* <Route index element={<Mainlayout/>} /> */}
       <Route path="/home" element={<Home/>} />
       <Route path="/about" element={<About/>} />
       <Route path="/contact" element={<Contact/>} />
       {/* </Route> */}
+    </Route>
     </Routes>
     {/* </Mainlayout> */}
     </BrowserRouter>
