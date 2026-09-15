@@ -1,0 +1,83 @@
+/* header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background-color:tomato;
+
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    margin-left:15px;;
+}
+
+.menu a{
+    text-decoration:none;
+    color:black;
+    margin-right:15px;
+}
+
+.menu button{
+    color:white;
+    margin-left:15px;
+    padding:8px 15px;
+    background-color:black;
+}
+.order{
+      display:flex;
+      text-align:center;
+      padding:20px 40px;
+      margin: 20px 40px;
+      gap: 50px;
+
+}
+.cities button{
+    /* display:flex; */
+    /* text-align:center;
+    margin: 10px 20px;
+    /* gap: 50px; */
+    /* background-color: white; */
+
+/* .footer{
+    text-decoration:none;
+    display:flex;
+    margin-top: 100px;
+    justify-content:center;
+    background-color:#CBCBCB;
+}
+hr{
+    border:none;
+    border-top: 2px solid;
+    margin: 10px 10px;
+
+}
+.download{
+    display:flex;
+    justify-content:center;
+    background-color:#CBCBCB;
+} */ */
+
+
+
+
+header {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+}
+
+nav a {
+  color: black;
+  font-size: 16px;
+}
+
+header p {
+  margin-top: 0;
+}
