@@ -7,10 +7,8 @@ import MainPage from './Pages/MainPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Mainlayout from './Components/layout/Mainlayout';
 // import Header from './Components/Header';
-import Home from "./Pages/home";
-import About from "./Pages/about";
-import Contact from "./Pages/contact";
-
+import sightseeing from './Pages/sightseeing';
+import Place from './Pages/place';
 
 function App() { //parent component
   return(
@@ -21,11 +19,9 @@ function App() { //parent component
       <Route element={<Mainlayout/>}>  
       <Route index element={<MainPage/>} /> 
       {/* <Route index element={<Mainlayout/>} /> */}
-      <Route path="/home" element={<Home/>} />
-      <Route path="/about" element={<About/>} />
-      <Route path="/contact" element={<Contact/>} />
-      {/* </Route> */}
-    </Route>
+      <Route path="/sightseeing" element={<sightseeing/>} />
+      <Route path="/sightseeing/" element={<Place/>} />
+      </Route>
     </Routes>
     {/* </Mainlayout> */}
     </BrowserRouter>

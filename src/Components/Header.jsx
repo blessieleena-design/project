@@ -2,6 +2,7 @@ import React from "react";
 // import Swiggy from "../assets/Swiggy.png"
 // import { Link } from "react-router-dom";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -12,29 +13,30 @@ function Header() {
       </div>
       <nav>
         <div className="dropdown">
-          <button>Things to do▼</button>
+          <Link to ="/sightseeing">Things to do ▼</Link>
+          {/* <button>Things to do▼</button> */}
           {/* <a href="#">Things to do<span className="arrow">▼</span></a> */}
           <div className="dropdown-content">
             {/* <a href="#">Sightseeing</a> */}
-            <a href="https://www.escape2explore.com/blog/attraction/kodaikanal-lake/902">Sightseeing</a>
-            <a href="https://www.escape2explore.com/article/places-to-visit-in-kodaikanal/91">Nature & Parks</a>
+            <Link to="/sightseeing">Sightseeing</Link>
+            <Link to="/nature-parks">Nature & Parks</Link>
           <button onclick="ThingsToDo()"></button>
           </div>
         </div>
 
         <div className="dropdown">
-          <button>Where to go▼</button>
+          <Link to="/where-to-go">Where to go ▼</Link>
           <div className="dropdown-content">
-            <a href="https://www.justdial.com/Kodaikanal/Botanical-Gardens/nct-12004083">Botanical garden</a>
-            <a href="https://www.escape2explore.com/blog/attraction/pillar-rocks-best-time-to-visit-mustsee-highlights/40">Pillar rock</a>
+            <Link to="/botanical-garden">Botanical garden</Link>
+            <Link to="/pillar-rock">Pillar rock</Link>
           </div>
         </div>
 
         <div className="dropdown">
           <button>Events▼</button>
           <div className="dropdown-content">
-            <a href="https://www.kodaikanaltoday.com/en/events/kodaikanal-summer-festival">Music Festival</a>
-            <a href="https://trippyigloo.com/destination/food-culture-and-festivals-of-kodaikanal">Food Festival</a>
+            <Link to="/music-festival">Music Festival</Link>
+            <Link to="/food-festival">Food Festival</Link>
           </div>
         </div>
         

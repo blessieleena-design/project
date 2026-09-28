@@ -2,7 +2,7 @@ import React from "react"
 import Header from "../Components/Header"
 import Kodaikanal from "../assets/Kodaikanal.jpg"
 import "./MainPage.css"
-
+import { Link } from "react-router-dom"
 const MainPage = () => {
   return (
     <div className="hero">
