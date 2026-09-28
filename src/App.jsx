@@ -7,7 +7,7 @@ import MainPage from './Pages/MainPage'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Mainlayout from './Components/layout/Mainlayout';
 // import Header from './Components/Header';
-import sightseeing from './Pages/sightseeing';
+import Sightseeing from './Pages/sightseeing';
 import Place from './Pages/place';
 
 function App() { //parent component
@@ -16,12 +16,12 @@ function App() { //parent component
     {/* <Header/>  */}
     {/* <Mainlayout> */}
     <Routes>
-      <Route element={<Mainlayout/>}>  
-      <Route index element={<MainPage/>} /> 
+      {/* <Route element={<Mainlayout/>}>   */}
+      <Route path ="/"element={<MainPage/>} /> 
       {/* <Route index element={<Mainlayout/>} /> */}
-      <Route path="/sightseeing" element={<sightseeing/>} />
-      <Route path="/sightseeing/" element={<Place/>} />
-      </Route>
+      <Route path="/sightseeing" element={<Sightseeing/>} />
+      <Route path="/sightseeing/:place" element={<Place/>} />
+      {/* </Route> */}
     </Routes>
     {/* </Mainlayout> */}
     </BrowserRouter>
