@@ -3,15 +3,28 @@ import React from "react";
 import lakeImage from "../assets/kodaikanal-lake.jpg"
 import valleyImg from "../assets/Green-Valley-View.jpg"
 function Place (){
-const {place} = useParams();
+ const {place} = useParams();
+    const Places = [
+        {
+            id: 1,
+            name: "Kodaikanal Lake",
+            image: lakeImage
+        },
+        {
+            id: 2,
+            name: "Green Valley View",
+            image: valleyImg
+        }
+    ];
+    const placeData = Places.find(item => item.id === Number(place));
   return (
     <div>
-        <img src={lakeImage} width ="500"/>
-        <h1>Lake</h1>
-        {/* <h1>{place}</h1> */}
-        <p>Address:Lake Road,Kodaikanal</p>    
-        <img src={valleyImg} width ="500"/>
-        <h1>Valley</h1>
+      <div>
+        
+            <h1>{placeData.name}</h1>
+            
+         <img src={placeData.image} width={500} height={300} alt={placeData.name} /> 
+    </div>
     </div>
     
    
