@@ -19,8 +19,8 @@ function App() { //parent component
       {/* <Route element={<Mainlayout/>}>   */}
       <Route path ="/"element={<MainPage/>} /> 
       {/* <Route index element={<Mainlayout/>} /> */}
-      <Route path="/sightseeing" element={<Sightseeing/>} />
-      <Route path="/sightseeing/:place" element={<Place/>} />
+      <Route path="/:category" element={<Sightseeing/>} />
+      <Route path="/:category/:place" element={<Place/>} />
       <Route path="*" element={<h1><center>404 Not Found</center></h1>} />
       {/* </Route> */}
     </Routes>
