@@ -6,42 +6,36 @@ import "./sightseeing.css";
 const Sightseeing = () => {
   const { category } = useParams();
 
-  const selectedPlace = placeData.find(
-    (item) => item.id === Number(category)
+  const selectedPlace = placeData.filter(
+    (item) => item.category === category
   );
+
+  console.log(selectedPlace);
 
   return (
     <div>
       <h1 className="title">Things to do</h1>
 
-      {selectedPlace ? (
-        <div className="place-card">
-          <img
-            src={selectedPlace.image}
-            alt={selectedPlace.name}
-            width="300"
-          />
-          <h2>{selectedPlace.name}</h2>
-          <p>Category: {selectedPlace.category}</p>
-        </div>
+      {selectedPlace.length > 0 ? (
+        selectedPlace.map((place) => (
+          <Link
+            to={`/${category}/${place.id}`}
+            key={place.id}
+          >
+            <div className="place-card">
+              <img
+                src={place.image}
+                alt={place.name}
+                width="300"
+              />
+
+              <h2>{place.name}</h2>
+              <p>Category: {place.category}</p>
+            </div>
+          </Link>
+        ))
       ) : (
-        <div>
-          {placeData.map((place) => (
-            <Link
-              to={`/${category }/${place.id}`}
-              key={place.id}
-            >
-              <div className="place-card">
-                <img
-                  src={place.image}
-                  alt={place.name}
-                  width="200"
-                />
-                <h2>{place.name}</h2>
-              </div>
-            </Link>
-          ))}
-        </div>
+        <p>No places found for {category}</p>
       )}
     </div>
   );
