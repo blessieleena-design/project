@@ -1,32 +1,13 @@
 import { useParams } from "react-router";
 import React from "react"; 
-import lakeImage from "../assets/kodaikanal-lake.jpg"
-import valleyImg from "../assets/Green-Valley-View.jpg"
+// import lakeImage from "../assets/kodaikanal-lake.jpg"
+// import valleyImg from "../assets/Green-Valley-View.jpg"
+import places from "../data/placeData.json";
+import event from "../data/eventData.json";
 function Place (){
- const {place, category} = useParams(); 
-const Places = [
-        {
-            id: 1,
-            name: "Kodaikanal Lake",
-            image: lakeImage, 
-		category:"sightseeing"
-        },
-        {
-            id: 2,
-            name: "Green Valley View",
-            image: valleyImg,
-            category:"sightseeing"
-        },
- {
-            id: 3,
-            name: "Gandhi",
-            image: GandhiImg,
-		category:"nature-parks" 
-        }
-    ];
+ const {place, category, name} = useParams(); 
 
-
- const placeData = Places.find(item => (item.id === Number(place)));
+ const placeData = places.find(item => (item.id === Number(place)));
   return (
     <div>
       <div>

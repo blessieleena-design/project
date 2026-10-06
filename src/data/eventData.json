@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Kodaikanal Summer Festival",
+    "location": "Kodaikanal, Tamil Nadu",
+    "image": "https://images.unsplash.com/photo-1500534623283-312aade485b7?w=800",
+    "date": "May 17 - May 31",
+    "time": "10:00 AM - 6:00 PM",
+    "description": "A colorful summer festival featuring flower shows, cultural programs, music and local activities.",
+    "price": 100,
+    "currency": "INR",
+    "category": "Festival"
+  },
+  {
+    "id": 2,
+    "name": "Kodaikanal Flower Show",
+    "location": "Bryant Park, Kodaikanal",
+    "image": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800",
+    "date": "May 23 - May 25",
+    "time": "9:00 AM - 6:00 PM",
+    "description": "A beautiful flower exhibition displaying colorful flowers and creative floral arrangements.",
+    "price": 50,
+    "currency": "INR",
+    "category": "Festival"
+  },
+  {
+    "id": 3,
+    "name": "Music Festival",
+    "location": "Kodaikanal Lake",
+    "image": "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=800",
+    "date": "June 14",
+    "time": "5:00 PM - 9:00 PM",
+    "description": "An entertaining evening with live music performances by local and guest artists.",
+    "price": 200,
+    "currency": "INR",
+    "category": "Music"
+  },
+  {
+    "id": 4,
+    "name": "Food Festival",
+    "location": "Kodaikanal Town",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800",
+    "date": "July 5 - July 7",
+    "time": "11:00 AM - 9:00 PM",
+    "description": "Enjoy a variety of traditional Tamil dishes, snacks, desserts and local food.",
+    "price": 150,
+    "currency": "INR",
+    "category": "Food"
+  },
+  {
+    "id": 5,
+    "name": "Adventure Camp",
+    "location": "Kodaikanal Hills",
+    "image": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800",
+    "date": "August 10",
+    "time": "8:00 AM - 5:00 PM",
+    "description": "An exciting outdoor event featuring trekking, nature walks and adventure activities.",
+    "price": 500,
+    "currency": "INR",
+    "category": "Adventure"
+  },
+  {
+    "id": 6,
+    "name": "Cultural Night",
+    "location": "Kodaikanal Town Hall",
+    "image": "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=800",
+    "date": "September 15",
+    "time": "6:00 PM - 9:00 PM",
+    "description": "An evening celebrating Tamil culture through traditional dance, music and performances.",
+    "price": 100,
+    "currency": "INR",
+    "category": "Cultural"
+  }
+]

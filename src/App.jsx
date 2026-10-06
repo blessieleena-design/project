@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Mainlayout from './Components/layout/Mainlayout';
 // import Header from './Components/Header';
 import Sightseeing from './Pages/sightseeing';
+import Events from './Pages/events';
 import Place from './Pages/place';
 
 function App() { //parent component
@@ -21,6 +22,8 @@ function App() { //parent component
       {/* <Route index element={<Mainlayout/>} /> */}
       <Route path="/:category" element={<Sightseeing/>} />
       <Route path="/:category/:place" element={<Place/>} />
+      <Route path="/events/:name" element={<Events/>} />
+      <Route path="/events" element={<Events/>} />
       <Route path="*" element={<h1><center>404 Not Found</center></h1>} />
       {/* </Route> */}
     </Routes>
