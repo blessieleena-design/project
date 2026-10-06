@@ -9,13 +9,20 @@ const Sightseeing = () => {
   const selectedPlace = placeData.filter(
     (item) => item.category === category
   );
+
   console.log(selectedPlace); 
+
+
+  console.log(selectedPlace);
+
+
   return (
     <div>
       <h1 className="title">Things to do</h1>
 
       {selectedPlace.length > 0 ? (
         selectedPlace.map((place) => (
+
             <Link
                 to={`/${category}/${place.id}`}
                 key={place.id}
@@ -50,6 +57,8 @@ const Sightseeing = () => {
           ))} */}
         </div>
         )}
+
+          
     </div>
   );
 };
