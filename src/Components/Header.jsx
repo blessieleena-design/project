@@ -59,7 +59,7 @@ function Header  () {
           <Link to="/events">Events▼</Link>
           <div className="dropdown-content">
              {selectedEvent.map((event) => 
-            <Link key={event} to={`/${event}`}> {event} 
+            <Link key={event} to={`/events/${event}`}> {event} 
             </Link>
             )}
           </div>

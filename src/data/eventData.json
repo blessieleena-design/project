@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Kodaikanal Summer Festival",
+    "name": "Kodaikanal-Summer-Festival",
     "location": "Kodaikanal, Tamil Nadu",
     "image": "https://images.unsplash.com/photo-1500534623283-312aade485b7?w=800",
     "date": "May 17 - May 31",
@@ -13,7 +13,7 @@
   },
   {
     "id": 2,
-    "name": "Kodaikanal Flower Show",
+    "name": "Kodaikanal-Flower-Show",
     "location": "Bryant Park, Kodaikanal",
     "image": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800",
     "date": "May 23 - May 25",
@@ -25,7 +25,7 @@
   },
   {
     "id": 3,
-    "name": "Music Festival",
+    "name": "Music-Festival",
     "location": "Kodaikanal Lake",
     "image": "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=800",
     "date": "June 14",
@@ -37,7 +37,7 @@
   },
   {
     "id": 4,
-    "name": "Food Festival",
+    "name": "Food-Festival",
     "location": "Kodaikanal Town",
     "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800",
     "date": "July 5 - July 7",
@@ -49,7 +49,7 @@
   },
   {
     "id": 5,
-    "name": "Adventure Camp",
+    "name": "Adventure-Camp",
     "location": "Kodaikanal Hills",
     "image": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800",
     "date": "August 10",
@@ -61,7 +61,7 @@
   },
   {
     "id": 6,
-    "name": "Cultural Night",
+    "name": "Cultural-Night",
     "location": "Kodaikanal Town Hall",
     "image": "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=800",
     "date": "September 15",
